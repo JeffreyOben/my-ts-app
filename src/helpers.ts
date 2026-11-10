@@ -8,6 +8,12 @@ export function yearsUntilRetirement(
 ): number {
   return retiredAt - age;
 }
+
 export function canVote(age: number): boolean {
   return age >= 18;
+}
+
+export function greet(name = 'world', greeting?: string): string {
+  const text = greeting ?? 'Hello';
+  return `${text}, ${name}!`;
 }
